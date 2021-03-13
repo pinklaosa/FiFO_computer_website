@@ -1,0 +1,195 @@
+html,
+body {
+    height: 100%;
+    background-image: url("assets/img/show/bg2-login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 450px;
+    padding: 70px 50px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="username"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn-signin {
+    background: #ff5757;
+    text-transform: capitalize;
+    padding: 20px 110px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 36px;
+    display: inline-block;
+    line-height: 1;
+    -moz-user-select: none;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 4px
+}
+
+@media (max-width: 575px) {
+    .btn-signin {
+        padding: 22px 24px;
+        font-size: 14px
+    }
+}
+
+.btn-signin::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #B43838;
+    z-index: 1;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px
+}
+
+.btn-signin:hover::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1
+}
+
+.btn-signin.focus,
+.btn-signin:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.btn-signin.focus,
+.btn-signin:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+form {
+    width: 60%;
+    margin: 60px auto;
+    background: #fff;
+    padding: 100px;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    position: relative;
+    margin: 40px 0px;
+}
+
+.label-txt {
+    position: absolute;
+    top: -1.6em;
+    padding: 10px;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(14, 12, 12);
+    transition: ease .3s;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.line-box {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #BCBCBC;
+}
+
+.line {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff5757;
+    transition: ease .6s;
+}
+
+.input:focus+.line-box .line {
+    width: 100%;
+}
+
+.label-active {
+    top: -3em;
+}
+
+.form-register {
+    width: 100%;
+    max-width: 600px;
+    padding: 70px 50px;
+    margin: auto;
+}
+
+.block-al {
+    display: block;
+}
+
+.al-close {
+    backface-visibility: hidden;
+}
